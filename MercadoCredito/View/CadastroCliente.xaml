@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="MercadoCredito.View.CadastroCliente"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MercadoCredito.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition  Height="auto"/>
+            <RowDefinition  Height="auto"/>
+
+            <RowDefinition  Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Cadastro Clientes" FontSize="20" Grid.ColumnSpan="2"
+                   Margin="0,0,0,20"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Nome"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="sobrenome"/>
+        <TextBlock Grid.Row="4" Grid.Column="1" Text="Telefone"/>
+        <TextBox Grid.Row="2" Grid.Column="2" x:Name="BoxName" Width="150" Margin="5,0,0,20"/>
+        <TextBox Grid.Row="3" Grid.Column="2" x:Name="BoxSobrenome" Width="150" Margin="5,0,0,20"/>
+        <TextBox Grid.Row="4" Grid.Column="2" x:Name="BoxTelefone" Width="150" Margin="5,0,0,20"/>
+        <Button Grid.Row="5" Grid.Column="2" x:Name="BTNFormCad" Content="Cadastrar"/>
+
+
+
+
+
+    </Grid>
+</UserControl>
